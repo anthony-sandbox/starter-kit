@@ -7,3 +7,4 @@
 * Setup CHANGELOG.md file
 * Setup LICENSE.md file
 * Setup .editorconfig file
+* Setup package.json file
