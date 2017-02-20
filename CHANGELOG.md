@@ -1,3 +1,11 @@
+# 1.0.1 02/20/2017 
+
+* Install NSP
+* Install SNYK
+* Install npm-run-all
+* chmod bin/www file
+
+
 # 1.0.0 02/19/2017
 
 * Initialiate Git repository
