@@ -4,6 +4,11 @@
 * Install SNYK
 * Install npm-run-all
 * chmod bin/www file
+* Install standard package
+* Install snazzy package
+* Install onchange package
+* Fix Javascript linting
+
 
 
 # 1.0.0 02/19/2017

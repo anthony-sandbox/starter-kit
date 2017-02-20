@@ -3,4 +3,5 @@
  * @module www
  */
 
-const www = require('./bin/www');
+const www = require('./bin/www')
+www

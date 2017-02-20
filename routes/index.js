@@ -1,3 +1,3 @@
-module.exports = (app)=>{ 
-    app.use('/', require('./index.route'));
+module.exports = (app) => {
+  app.use('/', require('./index.route'))
 }

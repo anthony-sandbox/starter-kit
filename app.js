@@ -5,45 +5,46 @@
  * @module express
  */
 
-const path      = require('path');
-const dotenv    = require('dotenv');
-const express   = require('express');
+const path = require('path')
+const dotenv = require('dotenv')
+const express = require('express')
 
 /**
  * Load enviornment variables
  */
-dotenv.load();
+dotenv.load()
 
-dotenv.config({"path": path.resolve('.env-' + process.env.NODE_ENV)});
+dotenv.config({'path': path.resolve('.env-' + process.env.NODE_ENV)})
 
 /**
  * Initiate express
  */
 
-const app = express();
+const app = express()
 
 /**
  * static files
  */
 
-app.use('/public', express.static(path.resolve(process.env.PUBLIC)));
+app.use('/public', express.static(path.resolve(process.env.PUBLIC)))
 
 /**
- * Set view engine 
+ * Set view engine
  */
 
-app.set('views', path.resolve('./views'));
-app.set('view engine', process.env.VIEW_ENGINE);
+app.set('views', path.resolve('./views'))
+app.set('view engine', process.env.VIEW_ENGINE)
 
 /**
  * Routes
  */
 
-const routes = require('./routes')(app);
+const routes = require('./routes')(app)
+routes
 
 /**
  * Export App
  */
 
-module.exports = app;
+module.exports = app
 

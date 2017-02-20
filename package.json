@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run security && npm run app",
+    "start": "npm run lint & npm run security && npm run app",
     "app": "node_modules/.bin/nodemon index -- node app",
     "security": "npm-run-all nsp:check snyk:test",
     "nsp:check": "nsp check",
-    "snyk:test": "snyk test"
+    "snyk:test": "snyk test",
+    "lint": "onchange **/*.js -- npm run standard",
+    "standard": "node_modules/.bin/standard --cache --fix --verbose | snazzy ||true"
   },
   "keywords": [],
   "author": "Anthony <anthony.turrigiano@gmail.com>",
@@ -24,6 +26,8 @@
     "open": "0.0.5",
     "pug": "^2.0.0-beta11",
     "pug-cli": "^1.0.0-alpha6",
-    "snyk": "^1.25.0"
+    "snazzy": "^6.0.0",
+    "snyk": "^1.25.0",
+    "standard": "^8.6.0"
   }
 }
