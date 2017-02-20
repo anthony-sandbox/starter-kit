@@ -8,3 +8,10 @@
 * Setup LICENSE.md file
 * Setup .editorconfig file
 * Setup package.json file
+* Install Express framework
+* Setup Express index route
+* Install dotenv
+* Install chalk
+* Install Nodemon
+* Install open
+* Setup View Engine
