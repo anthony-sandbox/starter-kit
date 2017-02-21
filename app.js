@@ -1,20 +1,18 @@
 /**
  * /app.js
  * @module path
- * @module dotenv
+ * @module env
  * @module express
  */
 
 const path = require('path')
-const dotenv = require('dotenv')
+const env = require(path.resolve('./config/env'))
 const express = require('express')
 
 /**
- * Load enviornment variables
+ * Load Enviornments
  */
-dotenv.load()
-
-dotenv.config({'path': path.resolve('.env-' + process.env.NODE_ENV)})
+env
 
 /**
  * Initiate express

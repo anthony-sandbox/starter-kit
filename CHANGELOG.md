@@ -8,8 +8,18 @@
 * Install snazzy package
 * Install onchange package
 * Fix Javascript linting
-
-
+* Install node-sass
+* Install postcss
+* Install postcss-cli
+* Install postcss-cssnext
+* Install postcss-font-magician
+* Install purify-css
+* Install cssnano
+* Install cssnano-cli
+* Install pug
+* Install pug-cli
+* Install localtunnel
+* Install rimraf
 
 # 1.0.0 02/19/2017
 
