@@ -1,3 +1,9 @@
+# 1.0.2 02/25/2017
+
+* Add .vscode to .gitignore file
+* Update purifycss script in buildScripts directory
+* Update package.json scripts
+
 # 1.0.1 02/20/2017 
 
 * Install NSP

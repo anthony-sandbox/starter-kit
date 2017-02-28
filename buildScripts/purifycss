@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+
+/**
+ * buildScripts/purifycss
+ * @module fs
+ * @module path
+ * @module purify
+ * @module env
+ */
+
+const fs        = require('fs');
+const path      = require('path');
+const purify    = require('purify-css');
+const env       = require(path.resolve('./config/env'));
+const stdin     = process.openStdin();
+let data      = ""
+
+/**
+ * Load Environments
+ */
+
+env
+
+stdin.on('data', function(chunk){
+    data += chunk;
+})
+
+/**
+ * Read contents of index file
+ */
+const content = fs.readFileSync(path.resolve(process.env.INDEX)).toString();
+
+/**
+ * Purifycss options
+ */
+const options = {
+  minify: false
+};
+
+/**
+ * Purify Data
+ */
+stdin.on('end', function (chunk){
+    process.stdout.write(purify(content,data));
+})

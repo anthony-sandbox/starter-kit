@@ -1,0 +1,23 @@
+/**
+ * buildScripts/browser-sync
+ * @module bs 
+ */
+const bs = require('browser-sync')
+
+/**
+ * Create browser-sync instance
+ */
+bs.create()
+
+/**
+ * Initiate server
+ */
+bs.init({
+  server: './dist',
+  port: 8080
+})
+
+/**
+ * reload bs
+ */
+bs.reload('**/*.*')
