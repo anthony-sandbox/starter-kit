@@ -13,7 +13,7 @@ const path      = require('path');
 const purify    = require('purify-css');
 const env       = require(path.resolve('./config/env'));
 const stdin     = process.openStdin();
-let data      = ""
+var data      = ""
 
 /**
  * Load Environments

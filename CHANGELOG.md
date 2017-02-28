@@ -5,6 +5,10 @@
 * Install SuperTest
 * Add test scripts
 * Add express dependency to package.json
+* Add purify-css dev dependency to package.json
+* Add postcss dev dependency to package.json
+* Add cssnano dev dependency to package.json
+* Refractor purifycss script
 * Update README.md
 
 # 1.0.2 02/25/2017
