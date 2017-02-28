@@ -1,3 +1,10 @@
+# 1.0.3 02/27/2017
+
+* Install Mocha
+* Install Chai
+* Install SuperTest
+* Add test scripts
+
 # 1.0.2 02/25/2017
 
 * Add .vscode to .gitignore file
