@@ -1,8 +1,18 @@
 # Starter Kit
 
-#Start Application
+# Start Application
 
-    npm start
+* Run Tests
+    
+        npm t
+    
+* Authorize snyk
+        
+        sny auth
+    
+* Start app
+    
+        npm start
 
-#Security
+* Security
     npm run Security
